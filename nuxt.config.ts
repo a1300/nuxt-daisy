@@ -22,7 +22,8 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss(), tailwindTypography],
   },
+
   css: ['~/assets/css/main.css'],
   typescript: { strict: true },
-  compatibilityDate: '2025-02-22',
-})
+  compatibilityDate: '2025-04-02',
+});

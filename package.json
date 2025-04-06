@@ -8,6 +8,7 @@
     "pnpm": ">=9.0.4 <11.0.0"
   },
   "scripts": {
+    "prepare": "nuxt prepare",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

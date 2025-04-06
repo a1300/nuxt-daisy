@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { useNow } from '@vueuse/core'
 import { useThemeStore } from '../store/theme'
 
-const now = useNow()
+const now = useState('time', () => new Date().toLocaleTimeString() ); 
 const themeStore = useThemeStore()
 </script>
 
@@ -70,7 +69,7 @@ const themeStore = useThemeStore()
         </svg>
       </button>
       <button class="btn-shape btn-ghost btn ml-8 mr-4">
-        {{ now.toLocaleTimeString() }}
+        {{ now }}
       </button>
     </div>
   </div>
