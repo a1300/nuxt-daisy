@@ -1,17 +1,17 @@
-import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
 export const THEMES = {
-  DARK: 'dark',
-  LIGHT: 'light',
-}
+	DARK: 'dark',
+	LIGHT: 'light'
+};
 
 export const useThemeStore = defineStore('theme', () => {
-  const theme = ref({ dark: false })
+	const theme = ref({ dark: false });
 
-  function toggle() {
-    theme.value.dark = !theme.value.dark
-  }
+	function toggle() {
+		theme.value.dark = !theme.value.dark;
+	}
 
-  return { theme, toggle }
-})
+	return { theme, toggle };
+});
